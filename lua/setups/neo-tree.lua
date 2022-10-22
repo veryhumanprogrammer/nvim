@@ -15,12 +15,6 @@ require("neo-tree").setup({
 	source_selector = {
     	winbar = true,
     	content_layout = "center",
-    	tab_labels = {
-      		filesystem =  "Files" ,
-      		buffers =  "Buffers",
-      		git_status = "Git",
-      		diagnostics = "Diagnostic",
-    	},
   	},
 	default_component_configs = {
 		container = {
@@ -156,15 +150,9 @@ require("neo-tree").setup({
 			},
 		},
 		follow_current_file = false, -- This will find and focus the file in the active buffer every
-																 -- time the current file is changed while the tree is open.
 		group_empty_dirs = false, -- when true, empty folders will be grouped together
-		hijack_netrw_behavior = --"open_default", -- netrw disabled, opening a directory opens neo-tree
-																						-- in whatever position is specified in window.position
-													 "open_current",  -- netrw disabled, opening a directory opens within the
-																						-- window like netrw would, regardless of window.position
-													 --"disabled",    -- netrw left alone, neo-tree does not handle opening dirs
-		use_libuv_file_watcher = false, -- This will use the OS level file watchers to detect changes
-																		-- instead of relying on nvim autocmd events.
+		hijack_netrw_behavior = "open_current",
+		use_libuv_file_watcher = false, -- 
 		window = {
 			mappings = {
 				["u"] = "navigate_up",
@@ -181,7 +169,6 @@ require("neo-tree").setup({
 	},
 	buffers = {
 		follow_current_file = true, -- This will find and focus the file in the active buffer every
-								-- time the current file is changed while the tree is open.
 		group_empty_dirs = true, -- when true, empty folders will be grouped together
 		show_unloaded = true,
 		window = {

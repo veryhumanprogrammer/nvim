@@ -8,4 +8,4 @@ vim.cmd([[nnoremap <leader>y :"+y<cr>]])
 vim.cmd([[vnoremap <leader>y :"+y<cr>]])
 
 --Delete buffer
-vim.cmd([[vnoremap <C-w> :bdelete!<cr>]])
+vim.cmd([[nnoremap <C-w> :bdelete!<cr>]])
