@@ -22,6 +22,8 @@ require("setups/indent-blankline")
 require("setups/treesitter")
 --		Bufferline, for multiple buffers
 require("setups/bufferline")
+--		Lualine, for pretty line that tells me cool things
+require("setups/lualine")
 
 
 

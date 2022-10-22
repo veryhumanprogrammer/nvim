@@ -39,4 +39,7 @@ return require('packer').startup(function(use)
 --bufferline
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
 
+
+--lualine
+	use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true }}
 end)
