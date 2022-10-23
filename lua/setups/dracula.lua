@@ -33,8 +33,7 @@ dracula.setup({
 	-- set italic comment
 	italic_comment = true, -- default false
 	-- overrides the default highlights see `:h synIDattr`
-	overrides = {
-		Directory = {fg = dracula.colors().purple}
+	overrides = {Directory = {fg = dracula.colors().purple},
 	-- Examples
 	-- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
 	-- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight

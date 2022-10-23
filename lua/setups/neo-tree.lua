@@ -174,7 +174,7 @@ require("neo-tree").setup({
 		window = {
 			mappings = {
 				["bd"] = "buffer_delete",
-				["<bs>"] = "navigate_up",
+				["u"] = "navigate_up",
 				["."] = "set_root",
 			}
 		},

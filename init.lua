@@ -24,6 +24,8 @@ require("setups/treesitter")
 require("setups/bufferline")
 --		Lualine, for pretty line that tells me cool things
 require("setups/lualine")
+--		Comment toggler
+require("setups/nvim-comment")
 
 
 

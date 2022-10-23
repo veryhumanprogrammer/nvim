@@ -1,13 +1,39 @@
 require("bufferline").setup{
 
 	options = {
-    	offsets = {
-    		{ filetype = "neo-tree", text = "Files", padding = 0 },
-    		{ filetype = "Outline", text = "", padding = 1 },
-    	},
-    	max_name_length = 14,
-    	max_prefix_length = 13,
-    	tab_size = 20,
-    	separator_style = "thin",
-  	},
+		mode = "buffers", -- set to "tabs" to only show tabpages instead
+		numbers = "none",
+		indicator = {
+			icon = '▎', -- this should be omitted if indicator style is not 'icon'
+			style = 'icon',
+		},
+		left_trunc_marker = '',
+		right_trunc_marker = '',
+		--- name_formatter can be used to change the buffer's label in the bufferline.
+		--- Please note some names can/will break the
+		--- bufferline so use this at your discretion knowing that it has
+		--- some limitations that will *NOT* be fixed.
+		max_name_length = 18,
+		max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
+		truncate_names = true, -- whether or not tab names should be truncated
+		tab_size = 18,
+		diagnostics = "nvim_lsp",
+		offsets = {
+			{
+				filetype = "NvimTree",
+				text_align = "left",
+				separator = true,
+			}
+		},
+		color_icons = true,
+		show_buffer_icons = true,
+		show_buffer_close_icons = false,
+		show_close_icon = false,
+		separator_style = "thick",-- | "thick" | "thin" | { 'any', 'any' },
+		enforce_regular_tabs = true,
+		always_show_bufferline = true,
+		hover = {
+			enabled = false,
+		},
+	}
 }

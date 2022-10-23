@@ -1,5 +1,5 @@
 --Different ways to quickly quit neovim
-vim.cmd([[nnoremap <leader>q :q!<cr>]])
+vim.cmd([[nnoremap <leader>q :q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>]])
 vim.cmd([[nnoremap <leader>w :w!<cr>]])
 vim.cmd([[nnoremap <leader>x :x!<cr>]])
 
