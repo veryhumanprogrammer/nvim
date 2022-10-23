@@ -39,6 +39,8 @@ require("setups/lsp/mason-lspconfig")
 require("setups/lsp/null-ls")
 --		Glue for mason and null-ls
 require("setups/lsp/mason-null-ls")
+--		Configuration for how the lsp windows look
+require("setups/lsp/lspconfig")
 
 
 

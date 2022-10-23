@@ -1,11 +1,7 @@
 -- require("null-ls").setup()
 local null_ls = require("null-ls")
 
-
-
-
-require(							"mason-null-ls").setup({
-	ensure_installed = { "stylua", "jq" },
+require("mason-null-ls").setup({
 	automatic_installation = true,
 })
 
@@ -19,4 +15,3 @@ require("mason-null-ls").setup_handlers({
 		end
 	end,
 })
-

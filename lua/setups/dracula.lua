@@ -34,23 +34,42 @@ dracula.setup({
 	italic_comment = false, -- default false
 	-- overrides the default highlights see `:h synIDattr`
 	overrides = {
-		BufferCurrentSign = { fg = dracula.colors().purple, bg = dracula.colors().bg },
+		--the little bar that lights up at the current buffer
+		BufferCurrentSign = { fg = dracula.colors().purple, bg = dracula.colors().selection },
+		BufferCurrent = { bg = dracula.colors().selection },
+		BufferCurrentMod = { bg = dracula.colors().selection },
 
-		NeoTreeTabInactive = { bg = dracula.colors().bg, fg = dracula.colors().white },
-		NeoTreeTabActive = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		NeoTreeTabSeparatorActive = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		NeoTreeTabSeparatorInactive = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		BufferVisibleSign = { fg = dracula.colors().cyan, bg = dracula.colors().selection },
+		BufferVisible = { bg = dracula.colors().selection },
+		BufferVisibleMod = { bg = dracula.colors().selection },
 
+		BufferInactiveSign = { fg = dracula.colors().green, bg = dracula.colors().menu },
+		BufferInactive = { bg = dracula.colors().menu },
+		BufferInactiveMod = { bg = dracula.colors().menu },
+
+		--make the neotree top menu prettier
+		NeoTreeTabInactive = { bg = dracula.colors().menu, fg = dracula.colors().white },
+		NeoTreeTabActive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
+		NeoTreeTabSeparatorActive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
+		NeoTreeTabSeparatorInactive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
+
+		--border for floating stuff, mostly cmp
 		FloatBorder = { fg = dracula.colors().purple },
 
+		--telescope borders
 		TelescopePromptBorder = { fg = dracula.colors().purple },
 		TelescopeResultsBorder = { fg = dracula.colors().purple },
 		TelescopePreviewBorder = { fg = dracula.colors().purple },
 
+		--contents of cmp menu
 		PmenuSel = { bg = "NONE" },
 		Pmenu = { bg = "NONE" },
 		CmpItemAbbrMatch = { bg = "NONE", fg = dracula.colors().purple },
 		CmpItemAbbrDeprecated = { bg = "NONE", strikethrough = true },
+
+		--neotree background set to menu color and the seperator removed
+		VertSplit = { fg = dracula.colors().bg },
+		NeoTreeNormal = { bg = dracula.colors().menu },
 	},
 })
 vim.cmd([[colorscheme dracula]])
