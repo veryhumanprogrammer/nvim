@@ -36,6 +36,9 @@ require("setups/lsp/mason")
 --		LSP configurator
 require("setups/lsp/mason-lspconfig")
 
+--		LSP linter and formatter
+require("setups/lsp/null-ls")
+
 
 
 --Load keybinds

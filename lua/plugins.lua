@@ -72,4 +72,7 @@ return require('packer').startup(function(use)
 			'onsails/lspkind.nvim',
 		}
 	}
+
+--LSP Formatter and Linter
+	use 'jose-elias-alvarez/null-ls.nvim'
 end)
