@@ -34,8 +34,7 @@ dracula.setup({
 	italic_comment = false, -- default false
 	-- overrides the default highlights see `:h synIDattr`
 	overrides = {
-		-- NeoTreeTabSeparatorInactive = {fg = dracula.colors().pink, bg = dracula.colors().bg},
-
+		BufferCurrentSign = {fg = dracula.colors().purple, bg = dracula.colors().bg},
 
 		NeoTreeTabInactive = {bg = dracula.colors().bg, fg = dracula.colors().white},
 		NeoTreeTabActive = {bg = dracula.colors().bg, fg = dracula.colors().purple},

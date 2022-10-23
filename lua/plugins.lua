@@ -36,8 +36,8 @@ return require('packer').startup(function(use)
 		requires = {"nvim-treesitter/nvim-treesitter"}
 	}
 
---bufferline
-	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
+--barbar
+	use {'romgrk/barbar.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
 
 --lualine

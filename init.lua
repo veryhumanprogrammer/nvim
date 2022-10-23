@@ -19,8 +19,8 @@ require("setups/telescope")
 require("setups/indent-blankline")
 --		Treesitter, syntax stuff
 require("setups/treesitter")
---		Bufferline, for multiple buffers
-require("setups/bufferline")
+--		barbar, for multiple buffers
+require("setups/barbar")
 --		Lualine, for pretty line that tells me cool things
 require("setups/lualine")
 --		Comment toggler
@@ -47,4 +47,4 @@ require("keybinds/neo-tree")
 --		Fuzzy finder
 require("keybinds/telescope")
 --		Bufferline
-require("keybinds/bufferline")
+require("keybinds/barbar")
