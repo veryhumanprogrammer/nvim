@@ -69,6 +69,7 @@ return require('packer').startup(function(use)
 			'hrsh7th/cmp-cmdline',
 			'hrsh7th/cmp-vsnip',
 			'hrsh7th/vim-vsnip',
+			'onsails/lspkind.nvim',
 		}
 	}
 end)

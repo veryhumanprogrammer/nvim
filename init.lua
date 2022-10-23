@@ -46,5 +46,5 @@ require("keybinds/native")
 require("keybinds/neo-tree")
 --		Fuzzy finder
 require("keybinds/telescope")
---		Bufferline
+--		Barbar movement
 require("keybinds/barbar")

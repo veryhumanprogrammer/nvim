@@ -1,6 +1,6 @@
 --Set options and globals
 vim.g.mapleader = ' '
-vim.o.timeoutlen = 250
+vim.o.timeoutlen = 500
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = false
