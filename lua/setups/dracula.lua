@@ -34,53 +34,26 @@ dracula.setup({
 	italic_comment = false, -- default false
 	-- overrides the default highlights see `:h synIDattr`
 	overrides = {
-		BufferCurrentSign = {fg = dracula.colors().purple, bg = dracula.colors().bg},
+		BufferCurrentSign = { fg = dracula.colors().purple, bg = dracula.colors().bg },
 
-		NeoTreeTabInactive = {bg = dracula.colors().bg, fg = dracula.colors().white},
-		NeoTreeTabActive = {bg = dracula.colors().bg, fg = dracula.colors().purple},
-		NeoTreeTabSeparatorActive = {bg = dracula.colors().bg, fg = dracula.colors().purple},
-		NeoTreeTabSeparatorInactive = {bg = dracula.colors().bg, fg = dracula.colors().purple},
+		NeoTreeTabInactive = { bg = dracula.colors().bg, fg = dracula.colors().white },
+		NeoTreeTabActive = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		NeoTreeTabSeparatorActive = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		NeoTreeTabSeparatorInactive = { bg = dracula.colors().bg, fg = dracula.colors().purple },
 
-		FloatBorder = {fg = dracula.colors().purple},
+		FloatBorder = { fg = dracula.colors().purple },
 
-		TelescopePromptBorder = {fg = dracula.colors().purple},
-		TelescopeResultsBorder = {fg = dracula.colors().purple},
-		TelescopePreviewBorder = {fg = dracula.colors().purple},
+		TelescopePromptBorder = { fg = dracula.colors().purple },
+		TelescopeResultsBorder = { fg = dracula.colors().purple },
+		TelescopePreviewBorder = { fg = dracula.colors().purple },
 
-		PmenuSel = {bg = "NONE"},
-		Pmenu = {bg = "NONE"},
-		CmpItemAbbrMatch = {bg = "NONE", fg = dracula.colors().purple},
-		CmpItemAbbrDeprecated = {bg = "NONE", strikethrough = true},
-		-- CmpItemAbbrMatchFuzzy = {bg = "#000000", fg = "#000000"},
-		-- CmpItemMenu = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindField = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindProperty = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindEvent = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindText = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindEnum = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindKeyword = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindConstant = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindConstructor = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindReference = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindFunction = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindStruct = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindClass = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindModule = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindOperator = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindVariable = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindFile = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindUnit = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindSnippet = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindFolder = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindMethod = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindValue = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindEnumMember = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindInterface = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindColor = {bg = "#000000", fg = "#000000"},
-		-- CmpItemKindTypeParameter = {bg = "#000000", fg = "#000000"},
-	}
+		PmenuSel = { bg = "NONE" },
+		Pmenu = { bg = "NONE" },
+		CmpItemAbbrMatch = { bg = "NONE", fg = dracula.colors().purple },
+		CmpItemAbbrDeprecated = { bg = "NONE", strikethrough = true },
+	},
 })
-vim.cmd[[colorscheme dracula]]
+vim.cmd([[colorscheme dracula]])
 vim.cmd([[
 	highlight! link NeoTreeDirectoryIcon NvimTreeFolderIcon
 	highlight! link NeoTreeDirectoryName NvimTreeFolderName
@@ -88,5 +61,4 @@ vim.cmd([[
 	highlight! link NeoTreeRootName NvimTreeRootFolder
 	highlight! link NeoTreeDirectoryName NvimTreeOpenedFolderName
 	highlight! link NeoTreeFileNameOpened NvimTreeOpenedFile
-	
 ]])

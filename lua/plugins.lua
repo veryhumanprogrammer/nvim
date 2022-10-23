@@ -75,4 +75,7 @@ return require('packer').startup(function(use)
 
 --LSP Formatter and Linter
 	use 'jose-elias-alvarez/null-ls.nvim'
+
+--Glue for mason and nulls ls
+	use 'jayp0521/mason-null-ls.nvim'
 end)

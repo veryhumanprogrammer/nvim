@@ -35,9 +35,10 @@ require("setups/lsp/nvim-cmp")
 require("setups/lsp/mason")
 --		LSP configurator
 require("setups/lsp/mason-lspconfig")
-
 --		LSP linter and formatter
 require("setups/lsp/null-ls")
+--		Glue for mason and null-ls
+require("setups/lsp/mason-null-ls")
 
 
 
@@ -51,3 +52,5 @@ require("keybinds/neo-tree")
 require("keybinds/telescope")
 --		Barbar movement
 require("keybinds/barbar")
+--		Null Ls Keybindings
+require("keybinds/lsp/null-ls")

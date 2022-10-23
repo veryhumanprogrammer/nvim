@@ -8,7 +8,6 @@ vim.cmd([[nnoremap <leader>y :"+y<cr>]])
 vim.cmd([[vnoremap <leader>y :"+y<cr>]])
 
 --buffer stuff
-vim.cmd([[nnoremap <C-w> :bdelete!<cr>]])
+vim.cmd([[nnoremap <C-q> :bdelete!<cr>]])
 vim.cmd([[nnoremap <C-h> :bprevious<cr>]])
 vim.cmd([[nnoremap <C-l> :bnext<cr>]])
-
