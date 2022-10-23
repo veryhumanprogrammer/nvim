@@ -1,10 +1,8 @@
 require("bufferline").setup{
-
 	options = {
 		mode = "buffers", -- set to "tabs" to only show tabpages instead
 		numbers = "none",
 		indicator = {
-			icon = '▎', -- this should be omitted if indicator style is not 'icon'
 			style = 'icon',
 		},
 		left_trunc_marker = '',
@@ -22,15 +20,15 @@ require("bufferline").setup{
 			{
 				filetype = "NvimTree",
 				text_align = "left",
-				separator = true,
+				separator = false,
 			}
 		},
 		color_icons = true,
 		show_buffer_icons = true,
 		show_buffer_close_icons = false,
 		show_close_icon = false,
-		separator_style = "thick",-- | "thick" | "thin" | { 'any', 'any' },
-		enforce_regular_tabs = true,
+		separator_style = "slanted",-- | "thick" | "thin" | { 'any', 'any' },
+		enforce_regular_tabs = false,
 		always_show_bufferline = true,
 		hover = {
 			enabled = false,

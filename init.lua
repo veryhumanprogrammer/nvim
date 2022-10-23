@@ -3,7 +3,6 @@
 require("plugins")
 
 
-
 --Load setups
 
 --		Loads settings native to Neovim
@@ -26,6 +25,16 @@ require("setups/bufferline")
 require("setups/lualine")
 --		Comment toggler
 require("setups/nvim-comment")
+--		Autopairs
+require("setups/nvim-autopairs")
+
+--THE ORDER OF THE THINGS IN THE FOLLOWING BLOCK IS IMPORTANT
+--		Completeion engine for LSP servers
+require("setups/lsp/nvim-cmp")
+--		Package manager for language servers etc
+require("setups/lsp/mason")
+--		LSP configurator
+require("setups/lsp/mason-lspconfig")
 
 
 

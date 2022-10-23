@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
 		branch = "v2.x",
 		requires = { 
 			"nvim-lua/plenary.nvim",
-			"kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+			"kyazdani42/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 		}
 	}
@@ -45,4 +45,30 @@ return require('packer').startup(function(use)
 
 --comment toggler
 	use 'terrortylor/nvim-comment'
+
+--autopairs
+	use 'windwp/nvim-autopairs'
+
+--LSP etc manager
+	use 'williamboman/mason.nvim'
+
+--LSP configurator
+	use 'williamboman/mason-lspconfig.nvim'
+
+--Rust tools
+	use {'simrat39/rust-tools.nvim', requires = {'neovim/nvim-lspconfig'}}
+
+--LSP completion engine
+	use {
+		'hrsh7th/nvim-cmp',
+		requires = {
+			'neovim/nvim-lspconfig',
+			'hrsh7th/cmp-nvim-lsp',
+			'hrsh7th/cmp-buffer',
+			'hrsh7th/cmp-path',
+			'hrsh7th/cmp-cmdline',
+			'hrsh7th/cmp-vsnip',
+			'hrsh7th/vim-vsnip',
+		}
+	}
 end)

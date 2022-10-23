@@ -25,19 +25,31 @@ dracula.setup({
 		nontext = "#3B4048",
 	},
 	-- show the '~' characters after the end of buffers
-	show_end_of_buffer = true, -- default false
+	show_end_of_buffer = false, -- default false
 	-- use transparent background
 	transparent_bg = true, -- default false
 	-- set custom lualine background color
 	lualine_bg_color = "#44475a", -- default nil
 	-- set italic comment
-	italic_comment = true, -- default false
+	italic_comment = false, -- default false
 	-- overrides the default highlights see `:h synIDattr`
-	overrides = {Directory = {fg = dracula.colors().purple},
-	-- Examples
-	-- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
-	-- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
-	-- Nothing = {} -- clear highlight of Nothing
-	},
+	overrides = {
+		-- NeoTreeTabSeparatorInactive = {fg = dracula.colors().pink, bg = dracula.colors().bg},
+
+
+		NeoTreeTabInactive = {bg = dracula.colors().bg, fg = dracula.colors().white},
+		NeoTreeTabActive = {bg = dracula.colors().bg, fg = dracula.colors().purple},
+		NeoTreeTabSeparatorActive = {bg = dracula.colors().bg, fg = dracula.colors().purple},
+		NeoTreeTabSeparatorInactive = {bg = dracula.colors().bg, fg = dracula.colors().purple}
+	}
 })
 vim.cmd[[colorscheme dracula]]
+vim.cmd([[
+	highlight! link NeoTreeDirectoryIcon NvimTreeFolderIcon
+	highlight! link NeoTreeDirectoryName NvimTreeFolderName
+	highlight! link NeoTreeSymbolicLinkTarget NvimTreeSymlink
+	highlight! link NeoTreeRootName NvimTreeRootFolder
+	highlight! link NeoTreeDirectoryName NvimTreeOpenedFolderName
+	highlight! link NeoTreeFileNameOpened NvimTreeOpenedFile
+	
+]])
