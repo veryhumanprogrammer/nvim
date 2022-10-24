@@ -35,17 +35,17 @@ dracula.setup({
 	-- overrides the default highlights see `:h synIDattr`
 	overrides = {
 		--the little bar that lights up at the current buffer
-		BufferCurrentSign = { fg = dracula.colors().purple, bg = dracula.colors().selection },
-		BufferCurrent = { bg = dracula.colors().selection },
-		BufferCurrentMod = { bg = dracula.colors().selection },
+		BufferCurrentSign = { fg = dracula.colors().purple, bg = dracula.colors().menu },
+		BufferCurrent = { bg = dracula.colors().menu },
+		BufferCurrentMod = { bg = dracula.colors().menu },
 
 		BufferVisibleSign = { fg = dracula.colors().cyan, bg = dracula.colors().selection },
 		BufferVisible = { bg = dracula.colors().selection },
 		BufferVisibleMod = { bg = dracula.colors().selection },
 
-		BufferInactiveSign = { fg = dracula.colors().green, bg = dracula.colors().menu },
-		BufferInactive = { bg = dracula.colors().menu },
-		BufferInactiveMod = { bg = dracula.colors().menu },
+		BufferInactiveSign = { fg = dracula.colors().green, bg = dracula.colors().selection },
+		BufferInactive = { bg = dracula.colors().selection },
+		BufferInactiveMod = { bg = dracula.colors().selection },
 
 		--make the neotree top menu prettier
 		NeoTreeTabInactive = { bg = dracula.colors().menu, fg = dracula.colors().white },
