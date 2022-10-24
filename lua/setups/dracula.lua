@@ -72,8 +72,16 @@ dracula.setup({
 		BufferLineSeparatorVisible = { bg = dracula.colors().menu, fg = dracula.colors().menu },
 		BufferLineIndicatorVisible = { fg = dracula.colors().cyan, bg = dracula.colors().menu },
 
-		--aerial pretty
-		QuickFixLine = { bg = dracula.colors().menu },
+		LspFloatWinBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaHoverBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaSignatureHelpBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaCodeActionBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaDefPreviewBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspLinesDiagBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaDiagnosticBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaRenameBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LspSagaLspFinderBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+		LSOutlinePreviewBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
 	},
 })
 vim.cmd([[colorscheme dracula]])

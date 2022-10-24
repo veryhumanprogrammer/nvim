@@ -44,8 +44,6 @@ require("setups/vgit")
 require("setups/lsp/lspsaga")
 --		figuring out treesitter groups
 require("setups/playground")
---		code outline using lsp
-require("setups/lsp/aerial")
 --		pretty lsp stuff
 require("setups/lsp/lspkind")
 --		buffer bar
@@ -63,7 +61,5 @@ require("keybinds/telescope")
 require("keybinds/lsp/lspconfig")
 --		pretty lsp menus n shit
 require("keybinds/lsp/lspsaga")
---		code outlines using lsp
-require("keybinds/lsp/aerial")
 --		bufferline keybinds
 require("keybinds/bufferline")

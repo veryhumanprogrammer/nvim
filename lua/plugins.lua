@@ -84,9 +84,6 @@ return require("packer").startup(function(use)
 	--for figuring out highlight groups
 	use("nvim-treesitter/playground")
 
-	--code outliner
-	use("stevearc/aerial.nvim")
-
 	-- using packer.nvim
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 end)

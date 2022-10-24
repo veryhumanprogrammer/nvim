@@ -3,9 +3,6 @@ local handlers = {
 	["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "single" }),
 	["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "single" }),
 }
-local function on_attach(client, bufnr)
-	require("aerial").on_attach(client, bufnr)
-end
 
 vim.diagnostic.config({ virtual_text = false })
 require("mason-lspconfig").setup({})
@@ -17,7 +14,6 @@ require("mason-lspconfig").setup_handlers({
 		require("lspconfig")[server_name].setup({
 			capabilities = capabilities,
 			handlers = handlers,
-			on_attach = on_attach,
 		})
 	end,
 })
