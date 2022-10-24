@@ -40,12 +40,16 @@ require("setups/lsp/null-ls")
 require("setups/lsp/mason-null-ls")
 --		Lsp window configuration
 require("setups/lsp/lspconfig")
-
 --		fancy git stuff
 require("setups/vgit")
-
 --		pretty lsp menus n shit
 require("setups/lsp/lspsaga")
+--		figuring out treesitter groups
+require("setups/playground")
+--		code outline using lsp
+require("setups/lsp/aerial")
+--		pretty lsp stuff
+require("setups/lsp/lspkind")
 
 --Load keybinds
 
@@ -61,3 +65,5 @@ require("keybinds/barbar")
 require("keybinds/lsp/lspconfig")
 --		pretty lsp menus n shit
 require("keybinds/lsp/lspsaga")
+--		code outlines using lsp
+require("keybinds/lsp/aerial")

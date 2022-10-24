@@ -52,9 +52,6 @@ return require("packer").startup(function(use)
 	--LSP configurator
 	use("williamboman/mason-lspconfig.nvim")
 
-	--Rust tools
-	use({ "simrat39/rust-tools.nvim", requires = { "neovim/nvim-lspconfig" } })
-
 	--LSP completion engine
 	use({
 		"hrsh7th/nvim-cmp",
@@ -86,4 +83,10 @@ return require("packer").startup(function(use)
 
 	--Lsp saga, makes nice interactions with lsp
 	use("glepnir/lspsaga.nvim")
+
+	--for figuring out highlight groups
+	use("nvim-treesitter/playground")
+
+	--code outliner
+	use("stevearc/aerial.nvim")
 end)

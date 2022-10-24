@@ -52,6 +52,7 @@ dracula.setup({
 		NeoTreeTabActive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
 		NeoTreeTabSeparatorActive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
 		NeoTreeTabSeparatorInactive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
+		NeoTreeCursorLine = { bg = dracula.colors().menu },
 
 		--border for floating stuff, mostly cmp
 		FloatBorder = { fg = dracula.colors().purple },
@@ -67,24 +68,15 @@ dracula.setup({
 		CmpItemAbbrMatch = { bg = "NONE", fg = dracula.colors().purple },
 		CmpItemAbbrDeprecated = { bg = "NONE", strikethrough = true },
 
-		--neotree background set to menu color and the seperator removed
-		VertSplit = { fg = dracula.colors().bg, bg = dracula.colors().bg },
+		--neotree background set to menu color and the seperator made purple
+		VertSplit = { fg = dracula.colors().purple, bg = dracula.colors().bg },
 		NeoTreeNormal = { bg = dracula.colors().menu },
 
+		--underline instead of undercurl
 		DiagnosticUnderlineError = { undercurl = false, underline = true, sp = dracula.colors().red },
 		DiagnosticUnderlineWarn = { undercurl = false, underline = true, sp = dracula.colors().yellow },
 		DiagnosticUnderlineInfo = { undercurl = false, underline = true, sp = dracula.colors().cyan },
 		DiagnosticUnderlineHint = { undercurl = false, underline = true, sp = dracula.colors().cyan },
-
-		LspFloatWinBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaHoverBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaSignatureHelpBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaCodeActionBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaDefPreviewBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspLinesDiagBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaDiagnosticBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaRenameBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
-		LspSagaLspFinderBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
 	},
 })
 vim.cmd([[colorscheme dracula]])
