@@ -2,7 +2,6 @@
 
 require("plugins")
 
-
 --Load setups
 
 --		Loads settings native to Neovim
@@ -42,7 +41,8 @@ require("setups/lsp/mason-null-ls")
 --		Configuration for how the lsp windows look
 require("setups/lsp/lspconfig")
 
-
+--		fancy git stuff
+require("setups/vgit")
 
 --Load keybinds
 

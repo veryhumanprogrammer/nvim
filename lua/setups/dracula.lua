@@ -68,8 +68,14 @@ dracula.setup({
 		CmpItemAbbrDeprecated = { bg = "NONE", strikethrough = true },
 
 		--neotree background set to menu color and the seperator removed
-		VertSplit = { fg = dracula.colors().bg },
+		VertSplit = { fg = dracula.colors().bg, bg = dracula.colors().bg },
 		NeoTreeNormal = { bg = dracula.colors().menu },
+
+		-- gui = { underline = true, undercurl = false },
+		DiagnosticUnderlineError = { undercurl = false, underline = true, sp = dracula.colors().red },
+		DiagnosticUnderlineWarn = { undercurl = false, underline = true, sp = dracula.colors().yellow },
+		DiagnosticUnderlineInfo = { undercurl = false, underline = true, sp = dracula.colors().cyan },
+		DiagnosticUnderlineHint = { undercurl = false, underline = true, sp = dracula.colors().cyan },
 	},
 })
 vim.cmd([[colorscheme dracula]])
