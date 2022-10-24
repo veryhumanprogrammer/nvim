@@ -83,4 +83,7 @@ return require("packer").startup(function(use)
 			"nvim-lua/plenary.nvim",
 		},
 	})
+
+	--Lsp saga, makes nice interactions with lsp
+	use("glepnir/lspsaga.nvim")
 end)

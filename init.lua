@@ -44,6 +44,9 @@ require("setups/lsp/lspconfig")
 --		fancy git stuff
 require("setups/vgit")
 
+--		pretty lsp menus n shit
+require("setups/lsp/lspsaga")
+
 --Load keybinds
 
 --		Native
@@ -56,3 +59,5 @@ require("keybinds/telescope")
 require("keybinds/barbar")
 --		lsp keybinds
 require("keybinds/lsp/lspconfig")
+--		pretty lsp menus n shit
+require("keybinds/lsp/lspsaga")
