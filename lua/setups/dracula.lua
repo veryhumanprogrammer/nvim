@@ -71,7 +71,6 @@ dracula.setup({
 		VertSplit = { fg = dracula.colors().bg, bg = dracula.colors().bg },
 		NeoTreeNormal = { bg = dracula.colors().menu },
 
-		-- gui = { underline = true, undercurl = false },
 		DiagnosticUnderlineError = { undercurl = false, underline = true, sp = dracula.colors().red },
 		DiagnosticUnderlineWarn = { undercurl = false, underline = true, sp = dracula.colors().yellow },
 		DiagnosticUnderlineInfo = { undercurl = false, underline = true, sp = dracula.colors().cyan },
