@@ -38,7 +38,7 @@ require("setups/lsp/mason-lspconfig")
 require("setups/lsp/null-ls")
 --		Glue for mason and null-ls
 require("setups/lsp/mason-null-ls")
---		Configuration for how the lsp windows look
+--		Lsp window configuration
 require("setups/lsp/lspconfig")
 
 --		fancy git stuff
@@ -54,5 +54,5 @@ require("keybinds/neo-tree")
 require("keybinds/telescope")
 --		Barbar movement
 require("keybinds/barbar")
---		Null Ls Keybindings
-require("keybinds/lsp/null-ls")
+--		lsp keybinds
+require("keybinds/lsp/lspconfig")
