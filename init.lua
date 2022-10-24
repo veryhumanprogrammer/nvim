@@ -18,8 +18,6 @@ require("setups/telescope")
 require("setups/indent-blankline")
 --		Treesitter, syntax stuff
 require("setups/treesitter")
---		barbar, for multiple buffers
-require("setups/barbar")
 --		Lualine, for pretty line that tells me cool things
 require("setups/lualine")
 --		Comment toggler
@@ -50,6 +48,8 @@ require("setups/playground")
 require("setups/lsp/aerial")
 --		pretty lsp stuff
 require("setups/lsp/lspkind")
+--		buffer bar
+require("setups/bufferline")
 
 --Load keybinds
 
@@ -59,11 +59,11 @@ require("keybinds/native")
 require("keybinds/neo-tree")
 --		Fuzzy finder
 require("keybinds/telescope")
---		Barbar movement
-require("keybinds/barbar")
 --		lsp keybinds
 require("keybinds/lsp/lspconfig")
 --		pretty lsp menus n shit
 require("keybinds/lsp/lspsaga")
 --		code outlines using lsp
 require("keybinds/lsp/aerial")
+--		bufferline keybinds
+require("keybinds/bufferline")

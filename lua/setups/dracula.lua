@@ -34,18 +34,6 @@ dracula.setup({
 	italic_comment = false, -- default false
 	-- overrides the default highlights see `:h synIDattr`
 	overrides = {
-		--the little bar that lights up at the current buffer
-		BufferCurrentSign = { fg = dracula.colors().purple, bg = dracula.colors().menu },
-		BufferCurrent = { bg = dracula.colors().menu },
-		BufferCurrentMod = { bg = dracula.colors().menu },
-
-		BufferVisibleSign = { fg = dracula.colors().cyan, bg = dracula.colors().selection },
-		BufferVisible = { bg = dracula.colors().selection },
-		BufferVisibleMod = { bg = dracula.colors().selection },
-
-		BufferInactiveSign = { fg = dracula.colors().green, bg = dracula.colors().selection },
-		BufferInactive = { bg = dracula.colors().selection },
-		BufferInactiveMod = { bg = dracula.colors().selection },
 
 		--make the neotree top menu prettier
 		NeoTreeTabInactive = { bg = dracula.colors().menu, fg = dracula.colors().white },
@@ -77,6 +65,15 @@ dracula.setup({
 		DiagnosticUnderlineWarn = { undercurl = false, underline = true, sp = dracula.colors().yellow },
 		DiagnosticUnderlineInfo = { undercurl = false, underline = true, sp = dracula.colors().cyan },
 		DiagnosticUnderlineHint = { undercurl = false, underline = true, sp = dracula.colors().cyan },
+
+		--bufferline pretty
+		BufferLineSeparator = { bg = dracula.colors().menu, fg = dracula.colors().menu },
+		BufferLineSeparatorSelected = { bg = dracula.colors().menu, fg = dracula.colors().menu },
+		BufferLineSeparatorVisible = { bg = dracula.colors().menu, fg = dracula.colors().menu },
+		BufferLineIndicatorVisible = { fg = dracula.colors().cyan, bg = dracula.colors().menu },
+
+		--aerial pretty
+		QuickFixLine = { bg = dracula.colors().menu },
 	},
 })
 vim.cmd([[colorscheme dracula]])
