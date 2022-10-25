@@ -4,7 +4,6 @@ local handlers = {
 	["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "single" }),
 }
 
-vim.diagnostic.config({ virtual_text = false })
 require("mason-lspconfig").setup({})
 require("mason-lspconfig").setup_handlers({
 	-- The first entry (without a key) will be the default handler
@@ -15,5 +14,8 @@ require("mason-lspconfig").setup_handlers({
 			capabilities = capabilities,
 			handlers = handlers,
 		})
+	end,
+	["rust_analyzer"] = function()
+		require("rust-tools").setup({})
 	end,
 })

@@ -84,6 +84,18 @@ return require("packer").startup(function(use)
 	-- using packer.nvim
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 
-	--line, feline, meow
-	use("feline-nvim/feline.nvim")
+	--	heirline, for the true heir
+	use("rebelot/heirline.nvim")
+
+	--	gitsigns, for heirline to work
+	use("lewis6991/gitsigns.nvim")
+
+	--rust tools
+	use("simrat39/rust-tools.nvim")
+
+	--	tell everyone on discord how cool i am
+	use("andweeb/presence.nvim")
+
+	--	outline list thingy for navigating my code really goodly
+	use("simrat39/symbols-outline.nvim")
 end)

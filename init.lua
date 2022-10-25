@@ -18,8 +18,6 @@ require("setups/telescope")
 require("setups/indent-blankline")
 --		Treesitter, syntax stuff
 require("setups/treesitter")
---		feline for elegant line that shows me fun stuff
-require("setups/feline")
 --		Comment toggler
 require("setups/nvim-comment")
 --		Autopairs
@@ -48,6 +46,12 @@ require("setups/playground")
 require("setups/lsp/lspkind")
 --		buffer bar
 require("setups/bufferline")
+--		heirline, for the true heir
+require("setups/heirline")
+--		presence, shows everyone on discord how ocol i am
+require("setups/presence")
+--		symbol outline, for going places
+require("setups/symbols-outline")
 
 --Load keybinds
 
@@ -63,3 +67,5 @@ require("keybinds/lsp/lspconfig")
 require("keybinds/lsp/lspsaga")
 --		bufferline keybinds
 require("keybinds/bufferline")
+--		symbols outline keybinds
+require("keybinds/lsp/symbols-outline")

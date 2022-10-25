@@ -38,7 +38,7 @@ dracula.setup({
 		NeoTreeTabActive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
 		NeoTreeTabSeparatorActive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
 		NeoTreeTabSeparatorInactive = { bg = dracula.colors().menu, fg = dracula.colors().purple },
-		NeoTreeCursorLine = { bg = dracula.colors().menu },
+		NeoTreeCursorLine = { bg = dracula.colors().selection },
 
 		--border for floating stuff, mostly cmp
 		FloatBorder = { fg = dracula.colors().purple },
@@ -56,7 +56,7 @@ dracula.setup({
 
 		--neotree background set to menu color and the seperator made purple
 		VertSplit = { fg = dracula.colors().purple, bg = dracula.colors().bg },
-		NeoTreeNormal = { bg = dracula.colors().menu },
+		NeoTreeNormal = { bg = dracula.colors().bg },
 
 		--underline instead of undercurl
 		DiagnosticUnderlineError = { undercurl = false, underline = true, sp = dracula.colors().red },
