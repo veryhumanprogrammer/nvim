@@ -34,9 +34,6 @@ return require("packer").startup(function(use)
 	--indents with pretty lines uwu
 	use({ "lukas-reineke/indent-blankline.nvim", requires = { "nvim-treesitter/nvim-treesitter" } })
 
-	--lualine
-	use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } })
-
 	--comment toggler
 	use("terrortylor/nvim-comment")
 
@@ -86,4 +83,7 @@ return require("packer").startup(function(use)
 
 	-- using packer.nvim
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
+
+	--line, feline, meow
+	use("feline-nvim/feline.nvim")
 end)

@@ -18,8 +18,8 @@ require("setups/telescope")
 require("setups/indent-blankline")
 --		Treesitter, syntax stuff
 require("setups/treesitter")
---		Lualine, for pretty line that tells me cool things
-require("setups/lualine")
+--		feline for elegant line that shows me fun stuff
+require("setups/feline")
 --		Comment toggler
 require("setups/nvim-comment")
 --		Autopairs
