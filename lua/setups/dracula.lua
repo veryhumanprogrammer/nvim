@@ -80,6 +80,8 @@ dracula.setup({
 		LspSagaRenameBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
 		LspSagaLspFinderBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
 		LSOutlinePreviewBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
+
+		StatusLine = { bg = dracula.colors().bg },
 	},
 })
 vim.cmd([[colorscheme dracula]])

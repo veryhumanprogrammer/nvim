@@ -98,4 +98,7 @@ return require("packer").startup(function(use)
 
 	--	outline list thingy for navigating my code really goodly
 	use("simrat39/symbols-outline.nvim")
+
+	--	shows me where i am in the code
+	use("SmiteshP/nvim-navic")
 end)

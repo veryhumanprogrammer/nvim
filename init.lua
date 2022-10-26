@@ -51,7 +51,9 @@ require("setups/heirline")
 --		presence, shows everyone on discord how ocol i am
 require("setups/presence")
 --		symbol outline, for going places
-require("setups/symbols-outline")
+require("setups/lsp/symbols-outline")
+--		git stuff for heirline
+require("setups.gitsigns")
 
 --Load keybinds
 

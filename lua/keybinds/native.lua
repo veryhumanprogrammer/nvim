@@ -4,8 +4,8 @@ vim.cmd([[nnoremap <leader>w :w!<cr>]])
 vim.cmd([[nnoremap <leader>x :x!<cr>]])
 
 --Paste to system clipboard (currently not working)
-vim.cmd([[nnoremap <leader>y :"+y<cr>]])
-vim.cmd([[vnoremap <leader>y :"+y<cr>]])
+vim.cmd([[nnoremap <leader>y :*y<cr>]])
+vim.cmd([[vnoremap <leader>y :*y<cr>]])
 
 --buffer stuff
 vim.cmd([[nnoremap <C-q> :bdelete!<cr>]])

@@ -1,7 +1,7 @@
 local saga = require("lspsaga")
 saga.init_lsp_saga({
 	border_style = "single",
-	diagnostic_header = { " ", " ", " ", "ﴞ " },
+	diagnostic_header = { " ", " ", " ", " " },
 	code_action_lightbulb = {
 		enable = false,
 	},
