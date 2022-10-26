@@ -101,4 +101,7 @@ return require("packer").startup(function(use)
 
 	--	shows me where i am in the code
 	use("SmiteshP/nvim-navic")
+
+	--help me figure out what to put in functions with lsp! lsp signature help
+	use("ray-x/lsp_signature.nvim")
 end)

@@ -10,3 +10,4 @@ vim.o.number = true
 vim.o.mouse = false
 vim.o.termguicolors = true
 vim.o.scrolloff = 15
+vim.o.cmdheight = 0

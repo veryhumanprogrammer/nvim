@@ -54,6 +54,8 @@ require("setups/presence")
 require("setups/lsp/symbols-outline")
 --		git stuff for heirline
 require("setups.gitsigns")
+--		lsp signature, so i know what to put into functions
+require("setups.lsp.lsp_signature")
 
 --Load keybinds
 
