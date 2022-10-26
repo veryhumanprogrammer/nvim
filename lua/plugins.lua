@@ -1,3 +1,4 @@
+print()
 return require("packer").startup(function(use)
 	--plugin manager
 	use("wbthomason/packer.nvim")
@@ -104,4 +105,7 @@ return require("packer").startup(function(use)
 
 	--help me figure out what to put in functions with lsp! lsp signature help
 	use("ray-x/lsp_signature.nvim")
+
+	--nvim dap
+	use("mfussenegger/nvim-dap")
 end)

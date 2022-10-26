@@ -56,6 +56,10 @@ require("setups/lsp/symbols-outline")
 require("setups.gitsigns")
 --		lsp signature, so i know what to put into functions
 require("setups.lsp.lsp_signature")
+--		rust-tools
+require("setups.lsp.rust-tools")
+--		nvim dap
+require("setups.lsp.nvim-dap")
 
 --Load keybinds
 

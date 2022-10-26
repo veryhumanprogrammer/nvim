@@ -23,9 +23,12 @@ require("mason-lspconfig").setup_handlers({
 	end,
 	["rust_analyzer"] = function()
 		require("rust-tools").setup({
-			capabilities = capabilities,
-			handlers = handlers,
-			on_attach = on_attach,
+			server = {
+
+				capabilities = capabilities,
+				handlers = handlers,
+				on_attach = on_attach,
+			},
 		})
 	end,
 })
