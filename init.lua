@@ -60,6 +60,8 @@ require("setups.lsp.lsp_signature")
 require("setups.lsp.rust-tools")
 --		nvim dap
 require("setups.lsp.nvim-dap")
+--		vim wiki
+require("setups.vimwiki")
 
 --Load keybinds
 
@@ -77,3 +79,5 @@ require("keybinds/lsp/lspsaga")
 require("keybinds/bufferline")
 --		symbols outline keybinds
 require("keybinds/lsp/symbols-outline")
+--		vimwiki keybinds
+require("keybinds.vimwiki")

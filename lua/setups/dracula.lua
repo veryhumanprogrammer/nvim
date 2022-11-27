@@ -82,6 +82,13 @@ dracula.setup({
 		LSOutlinePreviewBorder = { bg = dracula.colors().bg, fg = dracula.colors().purple },
 
 		StatusLine = { bg = dracula.colors().bg },
+
+		VimwikiHeader1 = { fg = dracula.colors().orange },
+		VimwikiHeader2 = { fg = dracula.colors().green },
+		VimwikiHeader3 = { fg = dracula.colors().blue },
+		VimwikiHeader4 = { fg = dracula.colors().pink },
+		VimwikiHeader5 = { fg = dracula.colors().red },
+		VimwikiHeader6 = { fg = dracula.colors().purple },
 	},
 })
 vim.cmd([[colorscheme dracula]])

@@ -1,4 +1,4 @@
-vim.cmd([[nnoremap <leader>w :lua vim.lsp.buf.format()<cr>:w<cr>]])
+vim.cmd([[nnoremap <leader>v :lua vim.lsp.buf.format()<cr>]])
 vim.cmd([[nnoremap <leader>g :lua vim.lsp.buf.definition()<cr>]])
 vim.cmd([[nnoremap <leader>t :call v:lua.toggle_diagnostics()<cr>]])
 

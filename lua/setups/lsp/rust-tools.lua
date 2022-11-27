@@ -3,7 +3,7 @@ local opts = {
 
 		-- how to execute terminal commands
 		-- options right now: termopen / quickfix
-		executor = require("rust-tools/executors").termopen,
+		executor = require("rust-tools/executors").quickfix,
 
 		-- callback to execute once rust-analyzer is done initializing the workspace
 		-- The callback receives one parameter indicating the `health` of the server: "ok" | "warning" | "error"
@@ -145,7 +145,11 @@ local opts = {
 	server = {
 		-- standalone file support
 		-- setting it to false may improve startup time
+		-- ↓ rust-analyzer.diagnostics.enable                                      default: true
 		standalone = true,
+		diagnostics = {
+			enable = false
+		}
 	}, -- rust-analyzer options
 
 	-- debugging stuff

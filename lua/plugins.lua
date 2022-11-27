@@ -108,4 +108,10 @@ return require("packer").startup(function(use)
 
 	--nvim dap
 	use("mfussenegger/nvim-dap")
+
+	--github copilot
+	use("github/copilot.vim")
+
+	--vimwiki
+	use("vimwiki/vimwiki")
 end)
