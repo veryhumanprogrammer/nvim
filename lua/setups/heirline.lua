@@ -474,5 +474,5 @@ local StatusLines = {
 
 	DefaultStatusline,
 }
-require("heirline").setup(StatusLines, WinBars)
+require("heirline").setup({statusline = StatusLines, winbars = WinBars})
 -- we're donek.

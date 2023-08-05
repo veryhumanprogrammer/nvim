@@ -20,8 +20,6 @@ require("setups/indent-blankline")
 require("setups/treesitter")
 --		Comment toggler
 require("setups/nvim-comment")
---		Autopairs
-require("setups/nvim-autopairs")
 
 --THE ORDER OF THE THINGS IN THE FOLLOWING BLOCK IS IMPORTANT
 --		Completeion engine for LSP servers

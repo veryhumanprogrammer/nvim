@@ -39,7 +39,10 @@ return require("packer").startup(function(use)
 	use("terrortylor/nvim-comment")
 
 	--autopairs
-	use("windwp/nvim-autopairs")
+	use({
+		"windwp/nvim-autopairs",
+    	config = function() require("nvim-autopairs").setup {} end
+	})
 
 	--LSP etc manager
 	use("williamboman/mason.nvim")

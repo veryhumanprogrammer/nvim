@@ -5,13 +5,13 @@ require("mason-null-ls").setup({
 	automatic_installation = true,
 })
 
-require("mason-null-ls").setup_handlers({
-	function(source)
-		for _, type in ipairs({ "diagnostics", "formatting", "code_actions", "completion", "hover" }) do
-			local builtin = require("null-ls.builtins._meta." .. type)
-			if builtin[source] then
-				null_ls.register(null_ls.builtins[type][source])
-			end
-		end
-	end,
-})
+-- require("mason-null-ls").setup_handlers({
+-- 	function(source)
+-- 		for _, type in ipairs({ "diagnostics", "formatting", "code_actions", "completion", "hover" }) do
+-- 			local builtin = require("null-ls.builtins._meta." .. type)
+-- 			if builtin[source] then
+-- 				null_ls.register(null_ls.builtins[type][source])
+-- 			end
+-- 		end
+-- 	end,
+-- })
