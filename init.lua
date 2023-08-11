@@ -1,3 +1,15 @@
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
+end
+vim.opt.rtp:prepend(lazypath)
 --Load plugins
 
 require("plugins")
@@ -28,10 +40,6 @@ require("setups/lsp/nvim-cmp")
 require("setups/lsp/mason")
 --		LSP configurator
 require("setups/lsp/mason-lspconfig")
---		LSP linter and formatter
-require("setups/lsp/null-ls")
---		Glue for mason and null-ls
-require("setups/lsp/mason-null-ls")
 --		Lsp window configuration
 require("setups/lsp/lspconfig")
 --		fancy git stuff
@@ -51,15 +59,15 @@ require("setups/presence")
 --		symbol outline, for going places
 require("setups/lsp/symbols-outline")
 --		git stuff for heirline
-require("setups.gitsigns")
+require("setups/gitsigns")
 --		lsp signature, so i know what to put into functions
-require("setups.lsp.lsp_signature")
+require("setups/lsp/lsp_signature")
 --		rust-tools
-require("setups.lsp.rust-tools")
+require("setups/lsp/rust-tools")
 --		nvim dap
-require("setups.lsp.nvim-dap")
---		vim wiki
-require("setups.vimwiki")
+require("setups/lsp/nvim-dap")
+--		flash, for moving better
+require("setups/flash")
 
 --Load keybinds
 
@@ -77,5 +85,5 @@ require("keybinds/lsp/lspsaga")
 require("keybinds/bufferline")
 --		symbols outline keybinds
 require("keybinds/lsp/symbols-outline")
---		vimwiki keybinds
-require("keybinds.vimwiki")
+--		flash, for moving around faster
+require("keybinds/flash")

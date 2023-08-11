@@ -1,11 +1,13 @@
-vim.cmd([[nnoremap <leader>v :lua vim.lsp.buf.format()<cr>]])
-vim.cmd([[nnoremap <leader>g :lua vim.lsp.buf.definition()<cr>]])
-vim.cmd([[nnoremap <leader>t :call v:lua.toggle_diagnostics()<cr>]])
+local map = vim.keymap.set
 
-function _G.toggle_diagnostics()
+local function toggle_diagnostics()
 	if vim.diagnostic.config().virtual_text then
 		vim.diagnostic.config({ virtual_text = false })
 	else
 		vim.diagnostic.config({ virtual_text = true })
 	end
 end
+
+map("n", "<leader>v", vim.lsp.buf.format)
+map("n", "<leader>g", vim.lsp.buf.definition)
+map("n", "<leader>t", toggle_diagnostics)

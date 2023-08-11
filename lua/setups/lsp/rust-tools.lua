@@ -149,6 +149,13 @@ local opts = {
 		standalone = true,
 		diagnostics = {
 			enable = false
+		},
+		settings = {
+			['rust-analyzer'] = {
+				checkOnSave = {
+					command = "clippy"
+				}
+			}
 		}
 	}, -- rust-analyzer options
 

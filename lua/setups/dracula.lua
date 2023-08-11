@@ -27,9 +27,9 @@ dracula.setup({
 	-- show the '~' characters after the end of buffers
 	show_end_of_buffer = false, -- default false
 	-- use transparent background
-	transparent_bg = true, -- default false
+	transparent_bg = true,   -- default false
 	-- set italic comment
-	italic_comment = false, -- default false
+	italic_comment = false,  -- default false
 	-- overrides the default highlights see `:h synIDattr`
 	overrides = {
 
@@ -83,12 +83,7 @@ dracula.setup({
 
 		StatusLine = { bg = dracula.colors().bg },
 
-		VimwikiHeader1 = { fg = dracula.colors().orange },
-		VimwikiHeader2 = { fg = dracula.colors().green },
-		VimwikiHeader3 = { fg = dracula.colors().blue },
-		VimwikiHeader4 = { fg = dracula.colors().pink },
-		VimwikiHeader5 = { fg = dracula.colors().red },
-		VimwikiHeader6 = { fg = dracula.colors().purple },
+
 	},
 })
 vim.cmd([[colorscheme dracula]])

@@ -1,13 +1,13 @@
 --Different ways to quickly quit neovim
-vim.cmd([[nnoremap <leader>q :q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>]])
-vim.cmd([[nnoremap <leader>w :w!<cr>]])
-vim.cmd([[nnoremap <leader>x :x!<cr>]])
+local map = vim.keymap.set
+map("n", "<leader>q", "<cmd>:q!<cr>")
+map("n", "<leader>w", "<cmd>:w!<cr>")
+map("n", "<leader>x", "<cmd>:x!<cr>")
 
 --Paste to system clipboard (currently not working)
-vim.cmd([[nnoremap <leader>y "+y<cr>]])
-vim.cmd([[vnoremap <leader>y "+y<cr>]])
-vim.cmd([[nnoremap <leader>p "+p<cr>]])
-vim.cmd([[vnoremap <leader>p "+p<cr>]])
-
+map("n", "<leader>y", '"+y')
+map("v", "<leader>y", '"+y')
+map("n", "<leader>p", '"+p')
+map("v", "<leader>p", '"+p')
 --buffer stuff
-vim.cmd([[nnoremap <C-q> :bdelete!<cr>]])
+map("n", "<C-q>", "<cmd> bdelete!<cr>")

@@ -35,6 +35,7 @@ require("mason-lspconfig").setup_handlers({
 			capabilities = capabilities,
 			handlers = handlers,
 			on_attach = on_attach,
+
 		})
 	end,
 })

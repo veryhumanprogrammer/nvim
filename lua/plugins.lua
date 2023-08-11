@@ -1,59 +1,51 @@
-print()
-return require("packer").startup(function(use)
-	--plugin manager
-	use("wbthomason/packer.nvim")
-
+local plugins = {
 	--theme
-	use("Mofiqul/dracula.nvim")
+	"Mofiqul/dracula.nvim",
 
 	--file tree
-	use({
+	{
 		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v2.x",
-		requires = {
+		branch = "v3.x",
+		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"kyazdani42/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 		},
-	})
+	},
 
 	--startup menu
-	use({
+	{
 		"startup-nvim/startup.nvim",
-		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-	})
+		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	},
 
 	--telescope, fuzzy finder
-	use({
+	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.0",
-		requires = { "nvim-lua/plenary.nvim" },
-	})
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 	--filebrowser for telescope
-	use({ "nvim-telescope/telescope-file-browser.nvim" })
+	"nvim-telescope/telescope-file-browser.nvim",
 
 	--indents with pretty lines uwu
-	use({ "lukas-reineke/indent-blankline.nvim", requires = { "nvim-treesitter/nvim-treesitter" } })
+	{ "lukas-reineke/indent-blankline.nvim", dependencies = { "nvim-treesitter/nvim-treesitter" } },
 
 	--comment toggler
-	use("terrortylor/nvim-comment")
+	"terrortylor/nvim-comment",
 
 	--autopairs
-	use({
-		"windwp/nvim-autopairs",
-    	config = function() require("nvim-autopairs").setup {} end
-	})
+	"windwp/nvim-autopairs",
 
 	--LSP etc manager
-	use("williamboman/mason.nvim")
+	"williamboman/mason.nvim",
 
 	--LSP configurator
-	use("williamboman/mason-lspconfig.nvim")
+	"williamboman/mason-lspconfig.nvim",
 
 	--LSP completion engine
-	use({
+	{
 		"hrsh7th/nvim-cmp",
-		requires = {
+		dependencies = {
 			"neovim/nvim-lspconfig",
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
@@ -63,58 +55,51 @@ return require("packer").startup(function(use)
 			"hrsh7th/vim-vsnip",
 			"onsails/lspkind.nvim",
 		},
-	})
-
-	--LSP Formatter and Linter
-	use("jose-elias-alvarez/null-ls.nvim")
-
-	--Glue for mason and nulls ls
-	use("jayp0521/mason-null-ls.nvim")
+	},
 
 	--Fancy git stuff!
-	use({
+	{
 		"tanvirtin/vgit.nvim",
-		requires = {
+		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
-	})
+	},
 
 	--Lsp saga, makes nice interactions with lsp
-	use("glepnir/lspsaga.nvim")
+	"glepnir/lspsaga.nvim",
 
 	--for figuring out highlight groups
-	use("nvim-treesitter/playground")
+	"nvim-treesitter/playground",
 
 	-- using packer.nvim
-	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
+	{ "akinsho/bufferline.nvim",             dependencies = "kyazdani42/nvim-web-devicons" },
 
 	--	heirline, for the true heir
-	use("rebelot/heirline.nvim")
+	"rebelot/heirline.nvim",
 
 	--	gitsigns, for heirline to work
-	use("lewis6991/gitsigns.nvim")
+	"lewis6991/gitsigns.nvim",
 
 	--rust tools
-	use("simrat39/rust-tools.nvim")
+	"simrat39/rust-tools.nvim",
 
 	--	tell everyone on discord how cool i am
-	use("andweeb/presence.nvim")
+	"andweeb/presence.nvim",
 
 	--	outline list thingy for navigating my code really goodly
-	use("simrat39/symbols-outline.nvim")
+	"simrat39/symbols-outline.nvim",
 
 	--	shows me where i am in the code
-	use("SmiteshP/nvim-navic")
+	"SmiteshP/nvim-navic",
 
 	--help me figure out what to put in functions with lsp! lsp signature help
-	use("ray-x/lsp_signature.nvim")
+	"ray-x/lsp_signature.nvim",
 
 	--nvim dap
-	use("mfussenegger/nvim-dap")
+	"mfussenegger/nvim-dap",
 
-	--github copilot
-	use("github/copilot.vim")
+	--flash, for better movement
+	"folke/flash.nvim"
+}
 
-	--vimwiki
-	use("vimwiki/vimwiki")
-end)
+require("lazy").setup({ plugins })
