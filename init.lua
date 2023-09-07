@@ -1,13 +1,13 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
 vim.opt.rtp:prepend(lazypath)
 --Load plugins
@@ -22,8 +22,6 @@ require("setups/native")
 require("setups/dracula")
 --		File tree
 require("setups/neo-tree")
---		Startup page
-require("setups/startup")
 --		Fuzzy finder
 require("setups/telescope")
 --		Pretty blankline lines
@@ -42,12 +40,8 @@ require("setups/lsp/mason")
 require("setups/lsp/mason-lspconfig")
 --		Lsp window configuration
 require("setups/lsp/lspconfig")
---		fancy git stuff
-require("setups/vgit")
 --		pretty lsp menus n shit
 require("setups/lsp/lspsaga")
---		figuring out treesitter groups
-require("setups/playground")
 --		pretty lsp stuff
 require("setups/lsp/lspkind")
 --		buffer bar
@@ -62,12 +56,12 @@ require("setups/lsp/symbols-outline")
 require("setups/gitsigns")
 --		lsp signature, so i know what to put into functions
 require("setups/lsp/lsp_signature")
---		rust-tools
-require("setups/lsp/rust-tools")
 --		nvim dap
 require("setups/lsp/nvim-dap")
 --		flash, for moving better
 require("setups/flash")
+--      for fancy java stuff
+require("setups/lsp/jdtls")
 
 --Load keybinds
 
@@ -87,3 +81,5 @@ require("keybinds/bufferline")
 require("keybinds/lsp/symbols-outline")
 --		flash, for moving around faster
 require("keybinds/flash")
+--		dap, for debugging
+require("keybinds/lsp/nvim-dap")

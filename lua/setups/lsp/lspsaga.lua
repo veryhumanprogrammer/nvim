@@ -1,9 +1,18 @@
 local saga = require("lspsaga")
 saga.setup({
+    finder = {
+        methods = {
+            tyd = "textDocument/typeDefinition"
+        },
+        default = "tyd+def+impl+ref"
+    },
 	border_style = "single",
 	diagnostic_header = { " ", " ", " ", " " },
-	code_action_lightbulb = {
-		enable = false,
+	lightbulb = {
+		enable = true,
+        sign = false,
+        virtual_text = true,
+
 	},
 	rename_action_quit = "<Esc>",
 	rename_in_select = true,

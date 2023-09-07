@@ -17,7 +17,7 @@ vim.cmd([[
   sign define DiagnosticSignHint text= texthl=DiagnosticSignHint linehl= numhl=DiagnosticLineNrHint
 ]])
 vim.diagnostic.config({
-	virtual_text = false,
+	virtual_text = true,
 	update_ininsert = true,
 	severity_sort = true,
 })
