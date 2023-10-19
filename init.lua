@@ -48,20 +48,16 @@ require("setups/lsp/lspkind")
 require("setups/bufferline")
 --		heirline, for the true heir
 require("setups/heirline")
---		presence, shows everyone on discord how ocol i am
-require("setups/presence")
 --		symbol outline, for going places
 require("setups/lsp/symbols-outline")
 --		git stuff for heirline
 require("setups/gitsigns")
---		lsp signature, so i know what to put into functions
-require("setups/lsp/lsp_signature")
 --		nvim dap
 require("setups/lsp/nvim-dap")
 --		flash, for moving better
 require("setups/flash")
 --      for fancy java stuff
-require("setups/lsp/jdtls")
+-- require("setups/lsp/jdtls")
 
 --Load keybinds
 

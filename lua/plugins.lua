@@ -18,13 +18,14 @@ local plugins = {
     {
         "nvim-telescope/telescope.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
+        lazy = true
     },
     --filebrowser for telescope
-    { "nvim-telescope/telescope-file-browser.nvim"},
-    { "nvim-treesitter/nvim-treesitter"},
+    { "nvim-telescope/telescope-file-browser.nvim", lazy = true},
+    { "nvim-treesitter/nvim-treesitter", lazy = true},
 
     --indents with pretty lines uwu
-    { "lukas-reineke/indent-blankline.nvim",        dependencies = { "nvim-treesitter/nvim-treesitter" }},
+    { "lukas-reineke/indent-blankline.nvim",        dependencies = { "nvim-treesitter/nvim-treesitter" }, lazy = true},
 
     --comment toggler
     "terrortylor/nvim-comment",
@@ -37,10 +38,10 @@ local plugins = {
     },
 
     --LSP etc manager
-    "williamboman/mason.nvim",
+    {"williamboman/mason.nvim", lazy = true},
 
     --LSP configurator
-    "williamboman/mason-lspconfig.nvim",
+    {"williamboman/mason-lspconfig.nvim", lazy = true},
 
     --LSP completion engine
     {
@@ -55,13 +56,13 @@ local plugins = {
             "hrsh7th/vim-vsnip",
             "onsails/lspkind.nvim",
         },
+        lazy = true
     },
 
     --Lsp saga, makes nice interactions with lsp
-    "glepnir/lspsaga.nvim",
+    {"glepnir/lspsaga.nvim", lazy = true},
 
-    -- using packer.nvim
-    { "akinsho/bufferline.nvim", dependencies = "kyazdani42/nvim-web-devicons" },
+    { "akinsho/bufferline.nvim", dependencies = "kyazdani42/nvim-web-devicons", lazy = true },
 
     --	heirline, for the true heir
     "rebelot/heirline.nvim",
@@ -70,10 +71,7 @@ local plugins = {
     "lewis6991/gitsigns.nvim",
 
     --rust tools
-    "simrat39/rust-tools.nvim",
-
-    --	tell everyone on discord how cool i am
-    { "andweeb/presence.nvim"},
+    {"simrat39/rust-tools.nvim", lazy = true},
 
     --	outline list thingy for navigating my code really goodly
     "simrat39/symbols-outline.nvim",
@@ -94,12 +92,12 @@ local plugins = {
     "rcarriga/nvim-dap-ui",
 
     --neodev, for making it easier to work on neovim
-    { "folke/neodev.nvim", opts = {} },
+    { "folke/neodev.nvim", opts = {}, lazy = true },
 
     --flash, for better movement
     "folke/flash.nvim",
 
-    { "mfussenegger/nvim-jdtls"},
+    { "mfussenegger/nvim-jdtls", lazy = true},
 }
 
 require("lazy").setup({ plugins })

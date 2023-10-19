@@ -38,9 +38,9 @@ require("mason-lspconfig").setup_handlers({
     -- a dedicated handler.
     function(server_name) -- default handler (optional)
         require("lspconfig")[server_name].setup({
-            capabilities = capabilities,
-            handlers = handlers,
-            on_attach = on_attach,
+            -- capabilities = capabilities,
+            -- handlers = handlers,
+            -- on_attach = on_attach,
         })
     end,
     ["opencl_ls"] = function()
@@ -62,5 +62,12 @@ require("mason-lspconfig").setup_handlers({
                 on_attach = on_attach_rust,
             },
         })
-    end,
+    end
+})
+require("lspconfig").glslls.setup({
+    capabilities = capabilities,
+    handlers = {
+        ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "single" }),
+    },
+    filetypes = { "glsl" }
 })
